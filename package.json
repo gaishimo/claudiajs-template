@@ -9,8 +9,9 @@
   ],
   "scripts": {
     "transpile": "babel src --out-dir bin",
-    "create": "yarn run transpile && yarn test && claudia create --region ap-northeast-1 --api-module bin/api",
-    "update": "yarn run transpile && yarn test && claudia update",
+    "create:api": "yarn run transpile && yarn test && claudia create --name claudiajs-api --config claudia.api.json --region ap-northeast-1 --api-module bin/api",
+    "update:api": "yarn run transpile && yarn test && claudia update --config claudia-api.json",
+    "destroy:api": "claudia destroy --config claudia-api.json",
     "lint": "eslint -c .eslintrc.yml ./src",
     "lint:fix": "eslint -c .eslintrc.yml --fix ./src",
     "test": "mocha"
