@@ -9,6 +9,9 @@
   ],
   "scripts": {
     "transpile": "babel src --out-dir bin",
+    "create:lambda": "yarn run transpile && yarn test && claudia create --name claudiajs-lambda --region ap-northeast-1 --config claudia-lambda.json --handler bin/lambda.handler",
+    "update:lambda": "yarn run transpile && yarn test && claudia update --config claudia-lambda.json",
+    "destroy:lambda": "claudia destroy --config claudia-lambda.json",
     "create:api": "yarn run transpile && yarn test && claudia create --name claudiajs-api --config claudia.api.json --region ap-northeast-1 --api-module bin/api",
     "update:api": "yarn run transpile && yarn test && claudia update --config claudia-api.json",
     "destroy:api": "claudia destroy --config claudia-api.json",
