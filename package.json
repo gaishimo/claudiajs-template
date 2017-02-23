@@ -4,8 +4,11 @@
   "main": "index.js",
   "repository": {},
   "license": "MIT",
+  "files": [
+    "bin"
+  ],
   "scripts": {
-    "transpile": "babel src/ --out-dir bin/",
+    "transpile": "babel src --out-dir bin",
     "create": "yarn run transpile && yarn test && claudia create --region ap-northeast-1 --api-module bin/api",
     "update": "yarn run transpile && yarn test && claudia update",
     "lint": "eslint -c .eslintrc.yml ./src",
