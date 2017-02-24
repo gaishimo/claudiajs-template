@@ -1,6 +1,6 @@
 # Claudia.js Template
 
-A boilerplate to develop API (Lambda & API Gateway) with Claudia.js.
+A boilerplate to develop Lambda (or Lambda & API Gateway) with Claudia.js.
 
 ## Stack
 
