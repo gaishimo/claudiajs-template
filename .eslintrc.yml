@@ -4,6 +4,9 @@ env:
   mocha: true
 extends: airbnb-base
 parser: babel-eslint
+plugins:
+  - flowtype
+  - flow-vars
 rules:
   semi:
     - error
