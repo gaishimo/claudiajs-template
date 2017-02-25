@@ -7,6 +7,7 @@ A boilerplate to develop Lambda (or Lambda & API Gateway) with Claudia.js.
 - Claudia.js
 - Babel (ES2015 ES2016 ES2017)
 - ESLint
+- flow-type
 - Mocha
 - power-assert
 
