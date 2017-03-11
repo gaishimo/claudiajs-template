@@ -41,6 +41,7 @@
     "power-assert": "^1.4.2"
   },
   "dependencies": {
+    "babel-polyfill": "^6.23.0",
     "claudia-api-builder": "^2.4.0"
   }
 }
