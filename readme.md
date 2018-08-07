@@ -1,5 +1,7 @@
 # Claudia.js Template
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/gaishimo/claudiajs-template.svg)](https://greenkeeper.io/)
+
 A boilerplate to develop Lambda (or Lambda & API Gateway) with Claudia.js.
 
 ## Stack
